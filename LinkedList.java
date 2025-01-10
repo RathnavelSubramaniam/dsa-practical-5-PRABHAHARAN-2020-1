@@ -39,8 +39,16 @@ scanner.close();
     }
 int length() 
     {
-  //Type your code here
+int count =0;
+    Node current =this.head;
+    while(current !=null)
+    {
+    count++;
+    current =current.next;
     }
+    return count;
+    }
+
 public void displayList() {
        Node current = head;
         while (current != null) {
